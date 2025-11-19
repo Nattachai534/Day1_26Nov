@@ -413,6 +413,7 @@
                 <div class="form-group">
                     <label>2. E-mail <span class="required">*</span></label>
                     <input type="email" name="email" required placeholder="example@mail.com">
+                    <div class="example-text">E-mail นี้ สำหรับส่งใบประกาศนียบัตร</div>
                 </div>
 
                 <div class="form-group">
@@ -696,10 +697,10 @@
 
                             <!-- Category 2 -->
                             <tr>
-                                <td colspan="2" style="background: #f8f9fa; font-weight: 700;">2. ด้านเจ้าหน้าที่/บุคลากรที่ให้บริการ (ผู้ให้ข้อมูลและอำนวยความสะดวกในการประชุม)</td>
+                                <td colspan="2" style="background: #f8f9fa; font-weight: 700;">2. ด้านเจ้าหน้าที่/บุคลากรที่ให้บริการ</td>
                             </tr>
                             <tr>
-                                <td class="question-cell">2.1 เจ้าหน้าที่ให้บริการด้วยความสุภาพ เป็นมิตร<span class="required">*</span></td>
+                                <td class="question-cell">2.1 เจ้าหน้าที่ให้บริการด้วยความสุภาพ เป็นมิตร <span class="required">*</span></td>
                                 <td>
                                     <div class="radio-group">
                                         <div class="radio-item">
@@ -1069,7 +1070,7 @@
                     </div>
 
                     <div class="form-group">
-                        <label>7. คะแนนความรู้ก่อนเข้าประชุม<span class="required">*</span></label>
+                        <label>7. คะแนนความรู้ก่อนเข้าประชุม <span class="required">*</span></label>
                         <div class="score-group">
                             <div class="score-item">
                                 <input type="radio" name="q7" id="q7_1" value="1" required>
@@ -1119,7 +1120,7 @@
                     </div>
 
                     <div class="form-group">
-                        <label>8. คะแนนความรู้หลังเข้าประชุม<span class="required">*</span></label>
+                        <label>8. คะแนนความรู้หลังเข้าประชุม <span class="required">*</span></label>
                         <div class="score-group">
                             <div class="score-item">
                                 <input type="radio" name="q8" id="q8_1" value="1" required>
@@ -1170,8 +1171,8 @@
                 </div>
 
                 <!-- Section 9: Knowledge Application (Day 1 Specific) -->
-                <div class="section-title">💡 9. การนำความรู้ไปใช้ประโยชน์ (Day 1)</div>
-                <p style="margin-bottom: 20px; color: #666;">ท่านคิดว่าท่านจะนำความรู้จากการบรรยายไปใช้ประโยชน์ระดับใด (Day 1 บรรยายวันที่ 26 พย.68)</p>
+                <div class="section-title">💡 9. การนำความรู้ไปใช้ประโยชน์</div>
+                <p style="margin-bottom: 20px; color: #666;">ท่านคิดว่าท่านจะนำความรู้จากการบรรยายไปใช้ประโยชน์ระดับใด</p>
 
                 <div class="table-container">
                     <table>
@@ -1210,7 +1211,7 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td class="question-cell">9.2 หัวข้อ "AI กับการส่งเสริม ป้องกัน ดูแลสมองเสื่อมในผู้สูงอายุ" (13.00-14.30 น.) <span class="required">*</span></td>
+                                <td class="question-cell">9.2 หัวข้อ "AI กับการส่งเสริม ป้องกัน ดูแลสมองเสื่อมในผู้สูงอายุ" (13-14.30 น.) <span class="required">*</span></td>
                                 <td>
                                     <div class="radio-group">
                                         <div class="radio-item">
@@ -1340,7 +1341,7 @@
 
     <script>
         // 🔧 กรุณากรอก Google Apps Script URL
-        const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbwKFLiyzb16tjbDkceXZ8GKj1sM1NM-UANuXhttGz0ld-0qtUumJYmYgZs5wudIOMMbmw/exec';
+        const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbwNHomoO7bPyZNCEYNCyCyKTedcLhz4VvEpm58m9D9G3CuhpuWmjPpbCgXNLfVrIsGavQ/exec';
 
         // Load names from Google Sheets on page load
         window.addEventListener('DOMContentLoaded', async function() {
@@ -1438,6 +1439,7 @@
                                 <p style="margin: 0; color: #856404;">
                                     <strong>หมายเหตุ:</strong><br>
                                     • หากท่านเข้าประชุม <strong>1 วัน</strong> → ใบประกาศจะส่งไปยังอีเมลของท่าน<br>
+                                    • หากท่านเข้าประชุม <strong>2 วัน</strong> → ใบประกาศจะส่งเมื่อท่านประเมินครบ 2 วัน<br>
                                     • หากท่านเข้าประชุม <strong>3 วัน</strong> → ใบประกาศจะส่งเมื่อท่านประเมินครบ 3 วัน
                                 </p>
                             </div>
